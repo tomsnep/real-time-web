@@ -1,0 +1,13 @@
+<template name="addActivity">
+	{{#if currentUser}}
+	<form id="addActivityForm">
+		<input type="text" name="name" placeholder="Wat ga je doen?">
+		<input type="text" name="location" placeholder="Waar ga je dat doen?">
+		<input type="text" name="date" placeholder="Wanneer ga je dat doen?">
+		<input type="submit" id="submitActivity" value="Voeg toe">
+	</form>
+	{{else}}
+	<p> Log in om een activiteit toe te voegen </p>
+	{{/if}}
+	
+</template>

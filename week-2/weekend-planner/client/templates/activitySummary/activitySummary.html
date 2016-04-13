@@ -1,0 +1,12 @@
+<template name="activitySummary">
+	{{#if currentUser}}
+	<h2>Plannen voor het weekend:</h2>
+	<ul>
+		{{#each Activities}}
+		<li>
+		{{> activityInfo}}
+		</li>
+		{{/each}}
+	</ul>
+	{{/if}}
+</template>
