@@ -1,0 +1,30 @@
+<template name="activityOverview">
+	<div>
+		<h2 class="h2-divider">Activities:</h2>
+			<ul class="activityOverviewUl">
+				{{#each activities}}
+					<li>
+						<p class="activityId">{{_id}}</p>
+						<h3 class="activityName">{{name}}</h3>
+						<div class="activityInfo">
+							<p>Created by {{admin}}</p>
+							<p>{{date}}</p>
+						</div>
+						<div>
+							<h3>Going</h3>
+							<p class="activityUserList">{{participatingUsers}}</p>
+						</div>
+						<div>
+							<h3>Interested</h3>
+							<p class="activityUserList">
+								{{interestedUsers}}
+							</p>
+						</div>
+						<div class="activityAddUsers">
+							{{> activityAddUsers}}
+						</div>
+					</li>	
+				{{/each}}
+			</ul>
+	</div>
+</template>

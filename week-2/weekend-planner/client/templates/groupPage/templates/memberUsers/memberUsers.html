@@ -1,0 +1,8 @@
+<template name="memberUsers">	
+	<h2 class="h2-divider">Users</h2>
+	<ul class="memberUsersUl">
+		{{#each memberUsers}}
+			<li>{{this}} <span class="deleteMemberUser"> delete</span></li>
+		{{/each}}
+	</ul>
+</template>

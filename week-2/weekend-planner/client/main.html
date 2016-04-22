@@ -1,15 +1,29 @@
 <head>
-  <title>simple</title>
+  <title>Weekend Planner</title>
+  <meta name="viewport" content="width=device-width" />
+  <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1">
 </head>
 
 <body>
-  <header>
+<header>
     {{> header}}
   </header>
-  <main>
-    <h1>Weekend Planner</h1>
-
-    {{> addActivity}}
-    {{> activitySummary}}
-  </main>
 </body>
+
+<template name="home">
+  <main>
+    {{#if currentUser}}
+      <div class="home-groupShow">
+        {{> groupShow}}
+      </div>
+      <div class="home-groupCreate">
+        {{> groupCreate}}
+      </div>
+    {{else}}
+      {{> login}}
+    {{/if}}
+  </main>
+  <footer>
+    
+  </footer>
+</template>

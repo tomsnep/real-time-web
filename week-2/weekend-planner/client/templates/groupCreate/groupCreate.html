@@ -1,0 +1,12 @@
+<template name="groupCreate">
+	<h2 class="h2-divider">Create Group</h2>
+	{{#if currentUser}}
+		<form id="groupCreate">
+	      <input type="text" name="name" placeholder="name">
+	      <input type="submit" value= "Create group">
+	    </form>
+    {{else}}
+    	<p>Please log in to make a group</p>
+    	{{> login}}
+    {{/if}}
+</template>

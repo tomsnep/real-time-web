@@ -1,0 +1,8 @@
+<template name="memberUsersAdd">
+	<h2 class="h2-divider">Add users</h2>
+	<ul class="allUsersUl">
+		{{#each allUsers}}
+		    <li>{{allUserEmail}} <span class="addMemberUser">add</span></li>
+		{{/each}}
+	</ul>
+</template>

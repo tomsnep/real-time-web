@@ -1,1 +1,190 @@
-/* CSS declarations go here */
+/* fonts */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+/* general */
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+	background-color: #F5F6F8;
+	/*position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;*/
+}
+
+body * {
+	font-family: 'Open Sans', Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h2 {
+	color: #2B99D6;
+	font-size: 1.2em;
+	margin: .8rem 0;
+}
+
+ul {
+	list-style-type: none;
+}
+
+.h2-divider {
+	border-bottom: 2px solid #F5F6F8;
+	padding-bottom: .5rem;
+}
+
+/*header*/
+header {
+	width: 100%;
+	padding: .5rem .3rem;
+	color: #FFFFFF;
+	background-color: #2B99D6;
+	-webkit-box-shadow: 0px -18px 60px 0px rgba(43,154,214,1);
+	-moz-box-shadow: 0px -18px 60px 0px rgba(43,154,214,1);
+	box-shadow: 0px -18px 60px 0px rgba(43,154,214,1);
+}
+
+header nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+header ul {
+	display: flex;
+}
+
+header ul li {
+
+}
+
+.header-login {
+	
+}
+
+/* main */ 
+main {
+	padding: .5rem;
+}
+
+.home-groupCreate, .home-groupShow, .groupPage-members, .groupPage-activityAdd, .groupPage-activityOverview {
+	padding: .8rem;
+	margin-bottom: 1rem;
+	background-color: #FFFFFF;
+	border-radius: .2rem;
+	-webkit-box-shadow: 7px 7px 30px 0px rgba(50, 50, 50, 0.25);
+	-moz-box-shadow:    7px 7px 30px 0px rgba(50, 50, 50, 0.25);
+	box-shadow:         7px 7px 30px 0px rgba(50, 50, 50, 0.25);
+}
+
+/* groupShow */
+
+.home-groupShow a {
+	display: block;
+	margin: 1rem 0;
+	font-weight: light;
+	color: #000941;
+	text-decoration: none;
+}
+
+.home-groupShow a:last-of-type {
+	margin-bottom: 0;
+}
+
+/* groupCreate */
+
+input{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 1em;
+	width: 80%;
+	display: block;
+	margin: 0 auto;
+	margin-bottom: 1rem;
+	padding: .8rem;
+	border-radius: .2rem;
+	border: none;
+}
+input[type="text"] {
+	border-radius: 0;
+	border-bottom: 2px solid #2B99D6;
+	color: 
+}
+
+input[type="submit"] {
+	background-color: #2B99D6;
+	color: #FFFFFF;
+}
+
+/* groupPage */
+
+.groupPage {
+	padding: .5rem;
+}
+
+.groupPage-header {
+	width: 100%;
+	padding: .8rem .5rem;
+	background-color: #FFFFFF;
+}
+
+.groupPage-groupName {
+	font-size: 2em;
+	margin: 0;
+	color: #A7D9F5;
+}
+
+.deleteMemberUser {
+	color: #D24C31;
+	float: right;
+}
+
+.addMemberUser {
+	color: #31D274;
+	float: right;
+}
+
+.memberUsersUl, .allUsersUl {
+    max-height: 15vh;
+    overflow: scroll;
+}
+
+.activityId {
+	display: none;
+}
+
+.activityOverviewUl li {
+	border-bottom: 4px solid #2B99D6;
+	margin-bottom: 1rem;
+}
+
+.activityOverviewUl li:last-of-type{
+	border-bottom: none;
+}
+.activityName {
+	color: #A7D9F5;
+	font-size: 1.6em;
+	margin-bottom:.8em;
+}
+
+.activityUserList {
+	max-width: 100%;
+	overflow-wrap: break-word;
+}
+
+.activityOverviewUl div {
+	margin-bottom: 1rem;
+}
+
+.activityAddUsers form {
+	display: inline-block;
+	width: 49%;
+}
+
+.activityAddUsers input[type="submit"] {
+	width: 100%;
+}
+
+
+

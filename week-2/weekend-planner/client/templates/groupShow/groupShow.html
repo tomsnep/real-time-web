@@ -1,0 +1,10 @@
+<template name="groupShow">
+	<h2 class="h2-divider">Your groups:</h2>
+	<ul>
+		{{#each groupShow}}
+			<li>
+				<a href="/group/{{_id}}">{{name}}</a>
+			</li>
+		{{/each}}
+	</ul>
+</template>
