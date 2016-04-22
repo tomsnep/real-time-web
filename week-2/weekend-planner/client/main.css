@@ -52,17 +52,15 @@ header nav {
 	justify-content: space-between;
 }
 
+header nav a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
 header ul {
 	display: flex;
 }
 
-header ul li {
-
-}
-
-.header-login {
-	
-}
 
 /* main */ 
 main {

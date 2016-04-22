@@ -57,15 +57,11 @@ Groups.attachSchema(Groups.schema);
 Meteor.methods({
 	groupCreate: function(name) {
 
-		// if (!Meteor.userId()){
-		// 	throw new Meteor.Error('U moet ingelogd zijn om een groep aan te maken');
-		// } else {
 			Groups.insert({
 				name: name,
 				users: [Meteor.user().emails[0].address],
 				createdAt: new Date(),
 			});
-		// }
 	},
 	addMemberUser: function(groupId, userEmail) {
 
